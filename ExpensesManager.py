@@ -4,7 +4,7 @@ class ExpensesManager:
 
     def saveExpense(self, moneyBeforeSalary: float, expense: float, day: int) -> float:
         moneyBeforeSalary = moneyBeforeSalary - expense
-        self.expenses[day - 1] = self.expenses[day - 1] + expense
+        self.expenses[day - 1] += expense
         print("Значение сохранено! Ваш текущий баланс в рублях:", moneyBeforeSalary)
 
         if moneyBeforeSalary < 1000:

@@ -6,7 +6,7 @@ from ExpensesManager import ExpensesManager
 class Main:
     def __init__(self):
         self.moneyBeforeSalary = float(input("Сколько денег у вас осталось до зарплаты?\n"))
-        self.daysBeforeSalary = float(input("Сколько дней до зарплаты?\n"))
+        self.daysBeforeSalary = int(input("Сколько дней до зарплаты?\n"))
         self.converter = Converter(78.5, 88.7, 0.75)
         self.dinnerAdvisor = DinnerAdvisor()
         self.expensesManager = ExpensesManager()
